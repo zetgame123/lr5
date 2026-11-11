@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1502f"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="200" rx="16" fill="url(#g)"/>
+  <circle cx="272" cy="36" r="62" fill="#ffffff" opacity="0.10"/>
+  <circle cx="36" cy="184" r="82" fill="#ffffff" opacity="0.10"/>
+  <text x="160" y="108" font-family="Arial, sans-serif" font-size="54" font-weight="bold" fill="#ffffff" text-anchor="middle">Git</text>
+  <text x="160" y="143" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.85" text-anchor="middle">контроль версий</text>
+</svg>
