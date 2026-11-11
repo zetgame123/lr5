@@ -12,7 +12,6 @@ $definition = isset($_POST['definition']) ? trim($_POST['definition']) : '';
 $success = false;
 $error = '';
 
-// Допустимые форматы картинок
 $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
 $maxFileSize = 5 * 1024 * 1024; // 5 МБ
 
@@ -43,7 +42,6 @@ if ($term === '' || $definition === '') {
 }
 
 if ($error === '') {
-    // Имя файла формируется из термина (русская раскладка транслитерируется)
     $translit = [
         'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd', 'е' => 'e', 'ё' => 'yo',
         'ж' => 'zh', 'з' => 'z', 'и' => 'i', 'й' => 'y', 'к' => 'k', 'л' => 'l', 'м' => 'm',
@@ -58,7 +56,6 @@ if ($error === '') {
     $fileName = $name !== '' ? $name : 'image';
     $fileName .= '.' . $extension;
 
-    // Если файл с таким именем уже есть - добавляем номер
     $number = 1;
     while (file_exists(__DIR__ . '/Data/img/' . $fileName)) {
         $number++;
